@@ -32,20 +32,20 @@ format = "[( $path )]($style)"
 disabled = false
 symbol = ""
 style = "bold fg:#f4bf75"
-format = "[(• $symbol $branch )]($style)"
+format = "[($symbol $branch )]($style)"
 
 # Display the current commit hash or tag
 [git_commit]
 disabled = false
 tag_disabled = false
 style = "bold fg:#9ed072"
-format = "[(• # $hash$tag )]($style)"
+format = "[(# $hash$tag )]($style)"
 
 # Display current rebasing, merging, etc
 [git_state]
 disabled = false
 style = "bold fg:#86bbd8"
-format = "[(• state\\($progress_current/$progress_total\\) )]($style)"
+format = "[( state\\($progress_current/$progress_total\\) )]($style)"
 
 # File status of the repository
 [git_status]
@@ -61,27 +61,27 @@ ahead = " +$count"
 behind = " -$count"
 conflicted = " ⚑"
 style = "bold fg:#86bbd8"
-format = "[(•$untracked$modified$staged$renamed$deleted$stashed$ahead_behind$conflicted )]($style)"
+format = "[($untracked$modified$staged$renamed$deleted$stashed$ahead_behind$conflicted )]($style)"
 
 # Display the version of NodeJS
 [nodejs]
 disabled = false
 symbol = "nodejs"
 style = "bold fg:#b39df3"
-format = "[(• $symbol \\($version\\) )]($style)"
+format = "[(● $symbol \\($version\\) )]($style)"
 
 # Display the version of the Rust toolchain
 [rust]
 disabled = false
 symbol = "🦀"
 style = "bold fg:#b39df3"
-format = "[(• $symbol $version )]($style)"
+format = "[($symbol $version )]($style)"
 
 # Prompt character
 [character]
 disabled = false
-success_symbol = "[❯](#86bbd8)"
-error_symbol = "[❯](#da627d)"
+success_symbol = "[➤](#86bbd8)"
+error_symbol = "[➤](#da627d)"
 
 # Line break before prompt
 [line_break]
@@ -96,6 +96,5 @@ format = "[(⌛ $duration )]($style)"
 # Display the number of jobs in background
 [jobs]
 disabled = false
-symbol = "⬢"
 style = "bold fg:#06969a"
 format = "[(⬢ $number )]($style)"
